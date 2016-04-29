@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   get 'creatures/index'
 
   get "/creatures", to: "creatures#index", as: "creatures"
-
+  get "/creatures/new", to: "creatures#new", as: "new_creature"
+  post "/creatures", to: "creatures#create", as: "creature"
+  get "/creatures/:id", to: "creatures#show", as: "show_creature"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # root "creatures#index"
