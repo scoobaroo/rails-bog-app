@@ -1,5 +1,7 @@
+<label> Name </label>
 <h1><%= @creature.name %></h1>
+<label>Description</label>
 <h2><%= @creature.description %></h2>
-<%= button_to "Delete Creature", @creature, method: :delete %>
-<%= link_to "Edit Creature", edit_creature_path %>
-<%= link_to "Back", creatures_path %>
+<%= button_to "Delete Creature", @creature, method: :delete, class: "btn btn-small btn-success" %>
+<%= link_to "Edit Creature", edit_creature_path,class: "btn btn-small btn-primary" %>
+<%= link_to "Back", creatures_path ,class: "btn btn-small btn-default"%>
